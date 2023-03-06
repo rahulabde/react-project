@@ -1,0 +1,28 @@
+.block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    background-color: aquamarine;
+    color: burlywood;
+    margin: auto;
+}
+.block2{
+    display: flex;
+    justify-content:space-around;
+    width: 300px;
+    align-items: center;
+}
+.block2 ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.block2 ul li{
+    list-style: none;
+
+}
+img{
+    height: 100px;
+    width: 200px;
+    padding: 20px;
+}

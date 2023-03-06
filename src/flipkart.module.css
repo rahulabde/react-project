@@ -1,0 +1,24 @@
+#navv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    background-color: aquamarine;
+    color: burlywood;
+    margin: auto;
+}
+#navv ul{
+    color: black;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#navv ul li{
+    color: black;
+    margin: 10px;
+}
+#cart{
+    height: 5px;
+    width: 5px;
+}

@@ -1,0 +1,83 @@
+[
+    {
+        "trainerName":"sam",
+        "courseName":"java full stack",
+        "skills":["java","jdbc","hibernate","mvc","webTech"],
+        "duration":"3 months",
+        "trainerPhoto":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqzBEefIsZggQDBbL5qHiJBRkfV_qXHI1Ucg&usqp=CAU"
+    },
+    {
+        "trainerName":"jhon",
+        "courseName":"programming",
+        "skills":["java","javaSript"],
+        "duration":"2 months",
+        "trainerPhoto":"https://img.mlbstatic.com/mlb-photos/image/upload/c_fill,g_auto/w_180/v1/people/672536/headshot/milb/current"
+    },
+    {
+        "trainerName":"juan",
+        "courseName":"project",
+        "skills":["sdlc","jira","alm"],
+        "duration":"2 months",
+        "trainerPhoto":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLjTFgixds48zSKaCTvGkf7_0l_roj8BYUCw&usqp=CAU"
+    },
+    {
+        "trainerName":"neo",
+        "courseName":"communication",
+        "skills":["english","grammar"],
+        "duration":"1 months",
+        "trainerPhoto":"https://images.immediate.co.uk/production/volatile/sites/3/2019/08/Keanu-Reeves-5939c06.jpg?quality=90&resize=980,654"
+    },
+
+{       "movieName":" The Dark NIGHT",
+        "director":"Nolan",
+        "collection":"$1bn",
+        "release":"2008",
+        "moviePhoto":"https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg"
+    },
+    {       "movieName":"Batman begins",
+        "director":"Nolan",
+        "collection":"$1bn",
+        "release":"2004",
+        "moviePhoto":"https://upload.wikimedia.org/wikipedia/en/4/4f/Batman_Begins_Xbox_art.jpg"
+    },
+    {       "movieName":"The Dark Night Rises",
+    "director":"Nolan",
+    "collection":"$1bn",
+    "release":"2013",
+    "moviePhoto":"https://m.media-amazon.com/images/M/MV5BODZkYTdhMzQtYzMxYi00OGVjLTgzOTEtYTU5OTBjZDljZDM5XkEyXkFqcGdeQXVyNjczMzc5NzQ@._V1_FMjpg_UX1000_.jpg"
+}   ,
+
+{       "movieName":"The Batman",
+"director":"matt Reeves",
+"collection":"$1bn",
+"release":"2022",
+"moviePhoto":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ivRzPFE_1LQJAfUXm2CcpyL_Xfh4PLyNZsqFKIscQXrOWj23MynJq4ZTi7Rztzkog18&usqp=CAU"
+}  , 
+
+{       "iplTeam":"Royal challengers bangalore",
+"captain":"Faf",
+"stadium":"chinnaswyamy stadium",
+"location":"bengaluru",
+"teamPhoto":"https://static.india.com/wp-content/uploads/2022/12/IPL-2023-RCB-Full-Squad.jpg"
+}   ,
+
+{       "iplTeam":"mumbai indians",
+"captain":"Rohit",
+"stadium":"wankhede stadium",
+"location":"mumbai",
+"teamPhoto":"https://www.sportsganga.com/wp-content/uploads/2022/12/FkuIVtlaAAIbzTC.jpeg"
+}  ,
+ 
+{       "iplTeam":"Sun Rises",
+"captain":"Adam",
+"stadium":"indira gandi stadium",
+"location":"hyderabad",
+"teamPhoto":"https://pbs.twimg.com/media/FkwgR3DaEAEBSJQ?format=jpg&name=large"
+} ,
+{       "iplTeam":"Lucknow super giants",
+"captain":"Rahul",
+"stadium":"Lucknow stadium",
+"location":"Lucknow",
+"teamPhoto":"https://sportsganga.gumlet.io/wp-content/uploads/2023/01/compressjpglsg-2023.jpg?compress=true&quality=80&w=640&dpr=2.6"
+} 
+]

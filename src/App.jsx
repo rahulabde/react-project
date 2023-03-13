@@ -1,12 +1,14 @@
 import React from 'react'
+import Coursee from './Coursee';
 
-import json from "./userdata.json"
-import Course from './Course';
-import "./global.css"
 const App = () => {
   return (
     <>
-  <Course payload={json}/>
+  <Coursee   courseDetails={{
+    courseName:"java full stack",
+    courseDuration:"3 months",
+    courseAvail:true
+  }}/>
     </>
   )
 }

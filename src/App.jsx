@@ -1,10 +1,18 @@
 import React, { Component } from 'react'
 
 export default class App extends Component {
-   state={username:"raj"}
+   state={Subject:"React Js",
+Skills:["html","css","JS"]}
   render() {
-    return (
-      <h1>{this.state.username}</h1>
+    return (<>
+      <h1>{this.state.Subject}</h1>
+      <ul >
+        {this.state.Skills.map((x)=>{
+            return <li>{x}</li>
+        }
+         )}
+      </ul>
+      </>
     )
   }
 }

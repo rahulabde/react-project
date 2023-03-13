@@ -1,16 +1,13 @@
-import React from 'react'
-import Coursee from './Coursee';
+import React, { Component } from 'react'
 
-const App = () => {
-  return (
-    <>
-  <Coursee   courseDetails={{
-    courseName:"java full stack",
-    courseDuration:"3 months",
-    courseAvail:true
-  }}/>
-    </>
-  )
+export default class App extends Component {
+    constructor(){
+        super()
+        this.state={username:"sam"}
+    }
+  render() {
+    return (
+      <h1>{this.state.username}</h1>
+    )
+  }
 }
-
-export default App

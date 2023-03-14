@@ -1,0 +1,41 @@
+[{
+    "username":"sam",
+    "age":25,
+    "gender":"male",
+    "dob":"01-01-1997",
+    "occupation":"dev",
+    "salary":"100,000",
+    "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIVmdMHZTXjnKc1AL3h4eO6b8KfMK-wr8zLw&usqp=CAU",
+    "phoneNumber":["9876466366","9876543210","0123456789"]
+},
+{
+    "username":"ani",
+    "age":29,
+    "gender":"femlae",
+    "dob":"01-01-1997",
+    "occupation":"teacher",
+    "salary":"80,000",
+    "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStwzo5GuzlkcWR0LDlte8Fvi1C-6ezSW1xsg&usqp=CAU",
+    "phoneNumber":["9876466366","9876543210","0123456789"]
+},
+{
+    "username":"raj",
+    "age":35,
+    "gender":"male",
+    "dob":"01-01-1988",
+    "occupation":"driver",
+    "salary":"60,000",
+    "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHHqzkpQKMgvNdGsfbCgXCm3KxrE9gJYed8w&usqp=CAU",
+    "phoneNumber":["9876466366","9876543210","0123456789"]
+},
+{
+    "username":"suje",
+    "age":25,
+    "gender":"female",
+    "dob":"01-01-1997",
+    "occupation":"singer",
+    "salary":"200,000",
+    "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT48ukN18yyXjwJu00yMd3gd4qVi5sBmOgRLg&usqp=CAU" ,
+    "phoneNumber":["9876466366","9876543210","0123456789"]
+}
+]

@@ -1,18 +1,17 @@
 import React, { Component } from 'react'
+import Json from "./user.json"
+import Users from "./Users.jsx"
 
 export default class App extends Component {
-   state={Subject:"React Js",
-Skills:["html","css","JS"]}
+  constructor(){
+    super()
+    this.state={json:Json}
+  }
   render() {
-    return (<>
-      <h1>{this.state.Subject}</h1>
-      <ul >
-        {this.state.Skills.map((x)=>{
-            return <li>{x}</li>
-        }
-         )}
-      </ul>
-      </>
+    return (
+      <div>
+        <Users data={this.state.json}/>
+      </div>
     )
   }
 }

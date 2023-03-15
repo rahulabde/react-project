@@ -1,37 +1,31 @@
-
 import React, { Component } from 'react'
+import  style from "./app.module.css"
 
 export default class App extends Component {
-  
-    constructor()
-    {
+    constructor(){
         super()
-        this.state={
-            username:"sam",
-            count:0
-        }
+        this.state={count:0}
     }
-    
-    handleChange= ()=>{
-        this.setState({
-            username:"suje"
-            
-        })
-        console.log(this);
+    handleIncrement=()=>{
+        this.setState({count:this.state.count+1})
     }
-    handleNumberChange=()=>{
-        this.setState({
-            count:1
-        })
+    handleDecrement=()=>{
+        this.setState({count:this.state.count-1})
     }
-    render() {
-    return (
-      <div>
-        <h1 > {this.state.username}</h1>
-        <h1>{this.state.count}</h1>
-        <button onClick={this.handleChange}>click to change</button>
-        <button onClick={this.handleNumberChange}>change the number</button>
+    handleReset=()=>{
+        this.setState({count:0})
+    }
+  render() {
+    return (<> <center>
+      <div className={style.main}>{this.state.count} </div>
+      <div className={style.btn}>
+        <button className={style.btn1} onClick={this.handleIncrement}>+ Increment</button>
+        <button className={style.btn2}onClick={this.handleDecrement}>- Decrement</button>
+        <button className={style.btn3}onClick={this.handleReset}>RESET</button>
       </div>
+      
+      </center>
+      </>
     )
-    }
+  }
 }

@@ -1,31 +1,28 @@
-import React, { Component } from 'react'
-import  style from "./app.module.css"
+import React from 'react'
+import "./global1.css"
 
-export default class App extends Component {
-    constructor(){
-        super()
-        this.state={count:0}
-    }
-    handleIncrement=()=>{
-        this.setState({count:this.state.count+1})
-    }
-    handleDecrement=()=>{
-        this.setState({count:this.state.count-1})
-    }
-    handleReset=()=>{
-        this.setState({count:0})
-    }
-  render() {
-    return (<> <center>
-      <div className={style.main}>{this.state.count} </div>
-      <div className={style.btn}>
-        <button className={style.btn1} onClick={this.handleIncrement}>+ Increment</button>
-        <button className={style.btn2}onClick={this.handleDecrement}>- Decrement</button>
-        <button className={style.btn3}onClick={this.handleReset}>RESET</button>
-      </div>
-      
-      </center>
-      </>
-    )
+const App=()=>{
+  let[count,setcount]=React.useState(0)
+  let handleincrement=()=>{
+    setcount(count+1)
   }
+  let handledecrement=()=>{
+    setcount(count-1)
+  }
+  let handlereset=()=>{
+    setcount(0)
+  }
+  return(
+    <> <div className='main'>
+   <center> <h1>{count}</h1></center>
+   </div>
+   <div className='buttons'>
+    <button className='btn1' onClick={handleincrement}>increment</button>
+    <button className='btn2' onClick={ handledecrement}>decrement</button>
+    <button  className='btn3' onClick={handlereset}>reset</button>
+    </div>
+    </>
+  )
+
 }
+export default App

@@ -5,16 +5,18 @@ export default class App extends Component {
     super()
     this.state={username:""}
   }
-  componentDidMount(){
-    let input =document.querySelector("input")
-    input.addEventListener("keypress",(e)=>{
-      this.setState({username:e.target.value})
-    })
-  }
+  // componentDidMount(){
+  //   let input =document.querySelector("input")
+  //   input.addEventListener("keypress",(e)=>{
+  //     this.setState({username:e.target.value})
+  //   })
+  // }
   render() {
     return (<>
       <h1>{this.state.username}</h1>
-      <input type="text" />
+      <input type="text"  onChange={(e)=>{
+        this.setState({username:e.target.value})
+      }}/>
       </>
     )
   }

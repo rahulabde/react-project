@@ -1,20 +1,21 @@
-import React from 'react'
-import { toast, ToastContainer } from 'react-toastify'
-import "react-toastify/dist/ReactToastify.css"
+import React, { Component } from 'react'
 
-const App = () => {
-
-  let handlesubmit=()=>{
-    toast.success("logged in successfully",{position:toast.POSITION.TOP_CENTER})
+export default class App extends Component {
+  constructor(){
+    super()
+    this.state={username:""}
   }
-  return (
-    <>
-    <ToastContainer/>
-    <div>
-      <button onClick={handlesubmit}>click for message</button>
-    </div>
-    </>
-  )
+  componentDidMount(){
+    let input =document.querySelector("input")
+    input.addEventListener("keypress",(e)=>{
+      this.setState({username:e.target.value})
+    })
+  }
+  render() {
+    return (<>
+      <h1>{this.state.username}</h1>
+      <input type="text" />
+      </>
+    )
+  }
 }
-
-export default App

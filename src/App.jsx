@@ -1,20 +1,30 @@
+import { useRef } from "react"
 import React, { Component ,createRef} from 'react'
 
 export default class App extends Component {
-  constructor(){
+  constructor()
+  {
     super()
-    this.state={name:"hello world"}
-    this.h1Ref=createRef()
-  }
-  componentDidMount(){
-    let h1=document.querySelector('h1')
-    console.log(h1,"dom way");
-    console.log(this.h1Ref.current,"react way");
+    this.state={company:"Q spiders"}
+    this.spanRef=createRef()
+    this.btnRef=createRef()
   }
   render() {
     return (
-      <h1 ref={this.h1ref}>{this.state.name}</h1>
+      <> <h1>
+      <span ref={this.spanRef}>{this.state.company}</span> <br />
+      <button  ref={this.btnRef} onClick={()=>{
+        this.setState({company:"J spiders"})
+        this.spanRef.current.style.color="orange"
+        this.spanRef.current.style.border="2px"
+        this.spanRef.current.style.padding="2px"
+        this.spanRef.current.style.margin="2px"
+        this.btnRef.current.style.color="red"
+        this.btnRef.current.style.backgroundcoler="black"
+        this.btnRef.current.style.borderRadius="25%"
+      }}> change company</button>
+      </h1>
+      </>
     )
-
   }
 }

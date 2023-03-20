@@ -1,27 +1,28 @@
-import React ,{useState,useRef}from 'react'
-
-import Img from "./car.jpg"
+import React from 'react'
+import eye from "./eye.png"
+import { useState } from 'react';
 const App = () => {
 
-  let [photo,setphoto]=useState(Img)
-  let [loading,setloading]=useState(true)
-  let imgRef=useRef()
-  let handlechange=()=>{
-    if(loading==true){
-      setloading(!true)
-    imgRef.current.style.borderRadius="25%"
-    imgRef.current.style.border="2px"
-     }else{
-      setloading(!false)
-      imgRef.current.style.borderRadius="0"
-    imgRef.current.style.border="none"
-     } }
+  let [password , setPassword] = useState(true)
+
+  let showPassword = ()=>{
+    if(password == true)
+    {
+        setPassword(!true)
+    }
+    else
+    {
+        setPassword(!false)
+    }
+  }
+
   return (
     <div>
-      <img src={Img} alt="spy" ref={imgRef } height="200px" width="200px" />
-      <button onClick={handlechange}> {loading ? "on":"off"}</button>
+      <input type={password? "text" : "password"} name="" id="" />
+      <img src={eye} alt="" height="10px" width="10px" onClick={showPassword} />
     </div>
   )
+
 }
 
 export default App

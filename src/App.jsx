@@ -1,28 +1,30 @@
-import React from 'react'
-import eye from "./eye.png"
-import { useState } from 'react';
+import React,{useState , useRef} from 'react'
+import VIDEO from "./movie.mp4"
+
 const App = () => {
+  let [video , setVideo] = useState(VIDEO)
+  let [loading , setLoading] = useState(false)
+  let videoRef = useRef()
 
-  let [password , setPassword] = useState(true)
-
-  let showPassword = ()=>{
-    if(password == true)
+  let playOrPause = ()=>{
+    if(!loading)
     {
-        setPassword(!true)
+      setLoading(true)
+      videoRef.current.play()
     }
     else
     {
-        setPassword(!false)
+      setLoading(false)
+      videoRef.current.pause()
     }
+
   }
 
   return (
     <div>
-      <input type={password? "text" : "password"} name="" id="" />
-      <img src={eye} alt="" height="10px" width="10px" onClick={showPassword} />
+      <video src={VIDEO} onClick={playOrPause}ref={videoRef} height="250px" width="400px"></video>
     </div>
   )
-
 }
 
 export default App

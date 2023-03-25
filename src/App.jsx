@@ -1,26 +1,28 @@
-import React from 'react'
+import React, { Component,createRef } from 'react'
 
-const App = () => {
-  return (
-    <div>
-       <form action="">
+export default class App extends Component {
+  constructor(){
+    super()
+    this.userRef=createRef()
+    this.passRef=createRef()
+  }
+  handlesubmitr=()=>{
+    
+    let username=this.userRef.current.value
+    let password=this.passRef.current.value
+  }
+  render() {
+    return (
+      <div>
+         <form action="" onSubmit={this.handlesubmit}>
           <label htmlFor="username">username</label><br />
           <input type="text"  id="username"/><br />
           <label htmlFor="password">password</label><br />
           <input type="text" id="password" /><br />
-          <button onClick={
-            (e)=>{
-e.preventDefault()
-let username=document.getElementById("username").value
-let password=document.getElementById("password").value
-console.log(username,password);
-}
-          }
-  
-  >submit</button>
+          <button >submit</button>
         </form>
-    </div>
-  )
+      </div>
+    )
+  }
 }
 
-export default App

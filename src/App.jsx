@@ -1,30 +1,26 @@
-import React,{useState , useRef} from 'react'
-import VIDEO from "./movie.mp4"
+import React, { Component } from 'react'
 
-const App = () => {
-  let [video , setVideo] = useState(VIDEO)
-  let [loading , setLoading] = useState(false)
-  let videoRef = useRef()
-
-  let playOrPause = ()=>{
-    if(!loading)
-    {
-      setLoading(true)
-      videoRef.current.play()
-    }
-    else
-    {
-      setLoading(false)
-      videoRef.current.pause()
-    }
-
-  }
-
-  return (
-    <div>
-      <video src={VIDEO} onClick={playOrPause}ref={videoRef} height="250px" width="400px"></video>
-    </div>
-  )
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <form action="">
+          <label htmlFor="username">username</label><br />
+          <input type="text"  id="username"/><br />
+          <label htmlFor="password">password</label><br />
+          <input type="text" id="password" /><br />
+          <button onClick={
+            (e)=>{
+e.preventDefault()
+let username=document.getElementById("username").value
+let password=document.getElementById("password").value
+console.log(username,password);
 }
-
-export default App
+          }
+  
+  >submit</button>
+        </form>
+      </div>
+    )
+  }
+}

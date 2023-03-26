@@ -1,28 +1,28 @@
-import React, { Component,createRef } from 'react'
+import React from 'react'
+import { BrowserRouter as Router,Routes,Route } from  "react-router-dom"
+import Nav from "./Nav"
+import Home from "./Home"
+import Login from "./Login"
+import Signup from "./Signup"
+import About from "./About"
+import Pagenotfound from "./Pagenotfound"
 
-export default class App extends Component {
-  constructor(){
-    super()
-    this.userRef=createRef()
-    this.passRef=createRef()
-  }
-  handlesubmitr=()=>{
-    
-    let username=this.userRef.current.value
-    let password=this.passRef.current.value
-  }
-  render() {
-    return (
-      <div>
-         <form action="" onSubmit={this.handlesubmit}>
-          <label htmlFor="username">username</label><br />
-          <input type="text"  id="username"/><br />
-          <label htmlFor="password">password</label><br />
-          <input type="text" id="password" /><br />
-          <button >submit</button>
-        </form>
-      </div>
-    )
-  }
+
+const App = () => {
+  return (<>
+    <Nav/>
+    <Router>
+<Routes>
+  <Route path='/' element={<Home/>}/>
+  <Route path='*' element={<Pagenotfound/>}/>
+  <Route path='/Login' element={<Login/>}/>
+  <Route path='/About' element={<About/>}/>
+  <Route path='/Signup' element={<Signup/>}/>
+
+</Routes>
+    </Router>
+   </>  )
+
 }
 
+export default App

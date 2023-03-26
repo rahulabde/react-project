@@ -1,19 +1,28 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 
-const Nav = (props) => {
-  return (
-    <>
-    <h1 style={{color:"red"}}>{props.data}</h1>
-    <h2>{props.data2}</h2>
-    <h1>{props.data3}</h1>
-    <h1>{props.number}</h1>
-    <h1>{props.boolean}</h1>
-    <h1>{props.object.username}</h1>
-    <h1>{props.object.password}</h1>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCKJKxdBpJqkih7GNX-k1UOMSjcOrOel0DoQ&usqp=CAU" alt="" />
-    
-    </>
-  )
+const Nav = () => {
+  return (<>
+    <div style={{display:"flex" ,justifyContent:"space-between",alignItems:"center", border:"2px solid red"}}>
+<div>logo</div>
+<div>
+  <ol style={{display:"flex" ,justifyContent:"space-between",width:"400px"}}>
+  <li>
+    <Link to="/">Home</Link>
+  </li>
+  <li>
+    <Link to="/Login">Login</Link>
+  </li>
+  <li>
+    <Link to="/Signup">Signup</Link>
+  </li>
+  <li>
+    <Link to="/About">About</Link>
+  </li>
+  </ol>
+</div>
+    </div>
+    </> )
 }
 
 export default Nav

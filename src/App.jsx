@@ -1,28 +1,20 @@
 import React from 'react'
-import { BrowserRouter as Router,Routes,Route } from  "react-router-dom"
-import Nav from "./Nav"
-import Home from "./Home"
-import Login from "./Login"
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import Signup from "./Signup"
-import About from "./About"
-import Pagenotfound from "./Pagenotfound"
-
+import Login from "./Login"
 
 const App = () => {
-  return (<>
-    <Nav/>
+  return (
+    <>
     <Router>
-<Routes>
-  <Route path='/' element={<Home/>}/>
-  <Route path='*' element={<Pagenotfound/>}/>
-  <Route path='/Login' element={<Login/>}/>
-  <Route path='/About' element={<About/>}/>
-  <Route path='/Signup' element={<Signup/>}/>
-
-</Routes>
+      <Routes>
+        <Route path='/' element={<Signup/>}/>
+        <Route path='/Login' element={<Login/>}/>
+        
+      </Routes>
     </Router>
-   </>  )
-
+    </>
+  )
 }
 
 export default App
